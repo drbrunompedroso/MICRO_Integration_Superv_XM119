@@ -1,0 +1,16 @@
+main
+	__CC2DW
+	config_io
+	UART1_Init
+	ADC_Init
+	ADC_Read
+		Delay_22us
+	IntToStr
+		WordToStr
+			Div_16X16_U
+	Ltrim
+	transmiter_data
+		strcpy
+		strcat
+		UART1_Write_Text
+			UART1_Write
